@@ -86,10 +86,25 @@
     form {
       margin-top: 30px;
     }
-    iframe {
+    label, input, textarea {
+      display: block;
       width: 100%;
-      height: 500px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button[type="submit"] {
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 20px;
       border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
     }
     @media (max-width: 768px) {
       header h1 {
@@ -175,13 +190,24 @@
   <section id="contato">
     <h2>Vamos conversar?</h2>
     <p>📩 E-mail: luis@zettapme.com.br<br>
-    📱 WhatsApp: (11) 99655-7500<br>
+    📱 WhatsApp: (11) 9XXXX-XXXX<br>
     🔗 LinkedIn: <a href="https://www.linkedin.com/in/luiscgpinto/" target="_blank">linkedin.com/in/luiscgpinto</a></p>
 
     <a href="https://calendly.com/luiscgpinto/diagnostico" target="_blank" class="calendar-button">Agendar Diagnóstico no Calendly</a>
 
     <h3>Ou envie uma mensagem diretamente:</h3>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsKOs9S1hpmBkV_1anigozQtmwKc4iwRvIR-bwDOVv-H_cQ/viewform?embedded=true" width="100%" height="1600" style="border: none; overflow: hidden;"> </iframe>
+    <form action="https://formsubmit.co/luis@zettapme.com.br" method="POST">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
