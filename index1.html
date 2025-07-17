@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcheck ERP | COD Consultoria</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo COD Consultoria" class="logo" />
+        <h1>Plataforma de Avaliação e Healthcheck de ERP</h1>
+        <p>Responda o formulário abaixo e receba um diagnóstico gratuito do seu ambiente ERP.</p>
+        <form action="https://formsubmit.co/luis.pinto@codconsultoria.com.br" method="POST">
+            <input type="hidden" name="_next" value="thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="text" name="telefone" placeholder="Telefone" required>
+            <input type="text" name="empresa" placeholder="Empresa" required>
+            <textarea name="desafio" placeholder="Descreva seu principal desafio com ERP" required></textarea>
+            <input type="text" name="endereco_fake" style="display:none">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
